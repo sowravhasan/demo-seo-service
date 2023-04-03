@@ -320,19 +320,21 @@ h1,h2,h3,h4,h5,h6{
 .reveal.active {
     opacity: 1;
 }
+.member-container .seo-content h2{
+    font-size: 24px;
+    margin-bottom: 10px !important;
+}
 
 /*  team css code ends here  */
 /* skill css */
 .skills-main-container1 {
-    font-family: 'Open Sans', sans-serif;
-    ;
-    padding: 0px 80px;
+    padding: 0px 40px;
 }
 
 .skills-container1 {
     width: 100%;
     height: auto;
-    padding: 100px 0px;
+    padding: 50px 0px;
     display: flex;
 
 }
@@ -469,6 +471,9 @@ label{
     .card{
         margin-bottom: 30px;
     }
+    .skills-container1 {
+        padding-bottom: 30px;    
+    }
 }
 @media (max-width: 768px){
     .header-top h1{
@@ -503,5 +508,108 @@ label{
     .header-top h1{
         font-size: 20px;
         line-height: 25px;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+
+    .search-text {
+        font-size: 36px !important;
+        line-height: 40.5px !important;
+    }
+
+    .team-title {
+        font-size: 36px !important;
+        line-height: 40.5px !important;
+
+    }
+
+    .team-member-container {
+        flex-direction: column;
+
+
+    }
+
+    .member-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .team-member-wrapper {
+        padding: 0px;
+    }
+
+    .team-member-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .position {
+        margin-bottom: 20px;
+        font-size: 36px !important;
+        line-height: 40.5px !important;
+    }
+
+    .member {
+        width: 90%;
+    }
+
+    .member img {
+        width: 100%;
+    }
+
+    .member-name {
+        font-size: 36px !important;
+        line-height: 40.5px !important;
+    }
+    .skills-container1{
+        flex-direction: column;
+       
+    }
+    .skills-main-container1{
+        padding: 0px;
+    }
+    .skill1{
+        width: 90%;
+        margin-top: 50px;
+    }
+    .percent{
+        font-size: 36px!important;
+        line-height: 40.5px!important;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:1100px) {
+    .team-member-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .member-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills-container1{
+        flex-direction: column;
+       
+    }
+    .skills-main-container1{
+        padding: 0px;
+    }
+    .skill1{
+        width: 90%;
+        margin-top: 50px;
+    }
+    .percent{
+        font-size: 56px!important;
+        line-height: 40.5px!important;
     }
 }
