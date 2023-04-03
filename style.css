@@ -226,6 +226,197 @@ h1,h2,h3,h4,h5,h6{
     max-width: 100%;
     width: 450px;
 }
+/* team css */
+.team-container {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px !important;
+    height: auto;
+    background-color: #FFFCFC;
+    box-shadow: 0 0 10px #ccc !important;
+}
+
+.team-title {
+    font-size: 44px;
+    color: #4aa8df;
+    line-height: 57px;
+    text-align: center;
+    background-image: linear-gradient(75deg, #4aa6e0, #4f3aff);
+    text-transform: capitalize;
+    margin-bottom: 40px !important;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+.search-text {
+    font-size: 14px;
+    color: #3b3663;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+
+}
+
+.team-member-wrapper {
+    padding: 0px 100px;
+}
+
+.team-member-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.member {
+    width: 228px;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .14), 0 20px 70px rgba(0, 0, 0, .12);
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.member img {
+    width: 228px;
+    border-radius: 15px;
+
+}
+
+.member-name {
+    font-size: 24px;
+    color: #4aa8df;
+    line-height: 57px;
+    text-align: center;
+    background-image: linear-gradient(75deg, #4aa6e0, #4f3aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.position {
+    font-size: 14px;
+    color: #3b3663;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+/*  team css code ends here  */
+/* skill css */
+.skills-main-container1 {
+    font-family: 'Open Sans', sans-serif;
+    ;
+    padding: 0px 80px;
+}
+
+.skills-container1 {
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+    display: flex;
+
+}
+
+.skill1 {
+    width: 25%;
+    padding: 0px 10px;
+}
+
+.percent {
+    font-size: 71px;
+    color: #3b3663;
+    line-height: 63px;
+    text-align: left;
+    font-family: Oswald;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 7px;
+}
+
+.skill-name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #3b3663;
+    padding-bottom: 2px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 13px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, .043);
+}
+
+.SeoValue {
+    width: 0%;
+    border-radius: 30px;
+    height: 100%;
+    background-color: #fe4641 !important;
+    transition: 1s ease-in-out;
+}
+
+.SeoValue.seoActive {
+    width: 100%;
+}
+
+.webValue {
+    width: 0%;
+    border-radius: 30px;
+    height: 100%;
+    background-color: #6b58cd !important;
+    transition: 1s ease-in-out;
+}
+
+.webValue.webActive {
+    width: 100%;
+}
+
+.consultValue {
+    width: 0%;
+    border-radius: 30px;
+    height: 100%;
+    background-color: #333 !important;
+    transition: 1s ease-in-out;
+}
+
+.consultValue.consultActive {
+    width: 95%;
+}
+
+.socialValue {
+    width: 0%;
+    border-radius: 30px;
+    height: 100%;
+    background: linear-gradient(to right, #32d6ff, #2ac4ea);
+    transition: 1s ease-in-out;
+}
+
+.socialValue.socialActive {
+    width: 85%;
+}
 /* footer-form */
 .footer{
     background: #161616;

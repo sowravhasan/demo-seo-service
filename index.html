@@ -161,14 +161,91 @@
                 </div>
             </div>
         </div>
-    </div>  
-    <div class="skill">
+    </div> 
+    <section class="team-container">
+
+        <h2 class="search-text">SEARCH EXPERTS</h2>
+        <h2 class="team-title">Meet My Rockstar Team - Albuquerque NM</h2>
+        <div class="team-member-wrapper">
+
+            <div class="team-member-container">
+                <div class="member-container">
+                    <div class="member reveal">
+                        <img src="images/team1.webp"
+                            alt="team1">
+
+                    </div>
+                    <h2 class="member-name">Nathan Garnett</h2>
+                    <h2 class="position">DIRECTOR</h2>
+                </div>
+
+                <div class="member-container">
+                    <div class="member reveal">
+
+                        <img src="images/team2.webp"
+                            alt="team2">
+                    </div>
+                    <h2 class="member-name">Amanda Brady</h2>
+                    <h2 class="position">DIGITAL OUTREACH SPECIALIST</h2>
+                </div>
+                <div class="member-container ">
+                    <div class="member reveal">
+                        <img src="images/team3.webp"
+                            alt="team4">
+                    </div>
+                    <h2 class="member-name">Adnan Riaz</h2>
+                    <h2 class="position">ONPAGE SEO EXPERT</h2>
+                </div>
+                <div class="member-container">
+                    <div class="member reveal">
+                        <img src="images/team4.webp"
+                            alt="team4">
+                    </div>
+                    <h2 class="member-name">Samuel Wood</h2>
+                    <h2 class="position">SEO CONSULTANT</h2>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <div class="skill pt-5">
         <div class="container">
             <div class="categories-content">
                 <h2>Our Skills</h2>
                 <p><span>Delivering impactful SEO campaigns requires in-depth knowledge of a range of digital marketing tools and techniques. We need to consider every facet of your search marketing strategy – from the content you’re producing through to the way your website is rendering on mobile devices – if we’re going to give your website the best possible chance of search success.</span></p>
                 <p><span>Choose Nathan Garnett Consulting, and you’ll be working with people with a wealth of skills that have been honed from many years in the search marketing industry. And because we’re so passionate about generating results for businesses like yours, we are constantly improving our knowledge and testing new approaches to ensure our local SEO services in London are ahead of the curve.</span></p>
             </div>
+            <section class="skills-main-container1">
+                <div class="skills-container1">
+                    <div class="skill1">
+                        <h2 class="percent">100%</h2>
+                        <h2 class="skill-name">SEO</h2>
+                        <div class="progress-bar">
+                            <div class="SeoValue"></div>
+                        </div>
+                    </div>
+                    <div class="skill1">
+                        <h2 class="percent">100%</h2>
+                        <h2 class="skill-name">Web Design</h2>
+                        <div class="progress-bar">
+                            <div class="webValue"></div>
+                        </div>
+                    </div>
+                    <div class="skill1">
+                        <h2 class="percent">95%</h2>
+                        <h2 class="skill-name">Consultancy</h2>
+                        <div class="progress-bar">
+                            <div class="consultValue"></div>
+                        </div>
+                    </div>
+                    <div class="skill1">
+                        <h2 class="percent">85%</h2>
+                        <h2 class="skill-name">SOCIAL MEDIA</h2>
+                        <div class="progress-bar">
+                            <div class="socialValue"></div>
+                        </div>
+                    </div>
+                </div>     
+            </section>
         </div>
     </div>
     <div class="footer py-5">
@@ -219,5 +296,95 @@
     <!-- Popper.js first, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                    console.log('hello1')
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+
+        function progressBar1(className, activeClass) {
+            var reveals = document.querySelector(".SeoValue");
+
+
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals.getBoundingClientRect().top;
+            console.log(windowHeight)
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                console.log("hello")
+                reveals.classList.add('seoActive');
+            }
+
+
+        }
+        window.addEventListener("scroll", progressBar1);
+        function progressBar2() {
+            var reveals = document.querySelector(".webValue");
+
+
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals.getBoundingClientRect().top;
+            console.log(windowHeight)
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                console.log("hello")
+                reveals.classList.add('webActive');
+            }
+
+
+        }
+        window.addEventListener("scroll", progressBar2);
+        function progressBar3() {
+            var reveals = document.querySelector(".consultValue");
+
+
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals.getBoundingClientRect().top;
+            console.log(windowHeight)
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                console.log("hello")
+                reveals.classList.add('consultActive');
+            }
+
+
+        }
+        window.addEventListener("scroll", progressBar3);
+        function progressBar4() {
+            var reveals = document.querySelector(".socialValue");
+
+
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals.getBoundingClientRect().top;
+            console.log(windowHeight)
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+                console.log("hello")
+                reveals.classList.add('socialActive');
+            }
+
+
+        }
+        window.addEventListener("scroll", progressBar4);
+
+
+
+
+    </script>
   </body>
 </html>
