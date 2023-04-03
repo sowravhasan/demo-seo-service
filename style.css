@@ -1,0 +1,231 @@
+/* global css */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #F6F6F6; 
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{   
+    font-family: 'Oswald', sans-serif;
+}
+/* header CSS */
+.wave{
+    background-color: black;
+}
+
+.header-top{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    position: relative;  
+}
+.header-top h1 {
+    font-size: 59px;
+    color: #4aa8df;
+    line-height: 67px;
+    text-align: center;
+    background-size: cover!important;
+    background-clip: text!important;
+    background-image: linear-gradient(45deg,#54ade1,#fff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    vertical-align: baseline;
+    padding-top: 30px;
+}
+/* Categories section css */
+.categories{
+    margin-top: -10px;
+}
+.categories-content h3 {
+    font-size: 14px;
+    color: #3b3663;
+    line-height: 30px;
+    text-align: center;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.categories-content h2 {
+    font-size: 44px;
+    color: #4aa8df;
+    line-height: 57px;
+    text-align: center;
+    background-size: cover!important;
+    background-clip: text!important;
+    background-image: linear-gradient(75deg,#4aa6e0,#4f3aff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.categories-content p{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.categories-content p span{
+    color: #3b3663;
+}
+/* categories card */
+.card{
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(75deg,#1F5FBA,#162558);
+    color: #fff;
+}
+.card1{
+    background: linear-gradient(75deg,#6554F5,#538CFA);
+}
+.card2{
+    background: linear-gradient(75deg,#149EBF,#3AD9BB);
+    padding-bottom: 40px;
+}
+.card3{
+    background: linear-gradient(75deg,#F36E31,#FB9D54);
+}
+.card-body img{
+    width: 100px;
+    height:100px;
+    margin-bottom: 25px;
+}
+.card-title{
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+.card-body p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.campaign{
+    padding-top: 100px;
+}
+/* blockquote css */
+.blockquote-top{
+    background: #000;
+    padding-bottom: 40px;
+}
+.blockquote-section {
+    padding: 30px;
+    margin: 30px;
+    position: relative;
+    color: #fff;
+  }
+  
+  .icon-container {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  blockquote {
+    border: none;
+    font-size: 22px;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    line-height: 43px;
+    letter-spacing: 0.5px;
+    padding-top: 140px;
+  }
+  
+  .author {
+    text-align: center;
+    font-size: 16px;
+    line-height: 27px;
+    margin-top: 30px;
+  }
+  
+  /*SEO CSS*/
+.seo-content h3 {
+    font-size: 14px;
+    color: #3b3663;
+    line-height: 30px;
+    text-align: center;
+    font-family: Oswald;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.seo-content h2 {
+    font-size: 44px;
+    color: #4aa8df;
+    line-height: 57px;
+    text-align: center;
+    background-size: cover!important;
+    background-clip: text!important;
+    background-image: linear-gradient(75deg,#4aa6e0,#4f3aff);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+.seo-content p{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.seo-content p span{
+    color: #3b3663;
+}
+/* consultation css */
+.consultation{
+    background: url(images/graphical-bg.png);
+    box-shadow: 0 0 10px #ccc!important;
+    padding: 100px 0 100px 0;
+}
+.consultation-bottom p{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    color: #121212;
+    padding-bottom: 25px;
+}
+.consultation-bottom a{
+    text-decoration: none;
+    background: #ed8536;
+    font-weight:bold;
+    border:none;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+/* agency css */
+.agency-content p{
+    text-align:left !important;
+}
+.search-img{
+    width: 450px;
+}
+/* footer-form */
+.footer{
+    background: #000;
+}
+
